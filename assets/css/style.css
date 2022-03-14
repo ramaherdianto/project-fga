@@ -629,37 +629,37 @@ nav ul li .btn-nav {
 
   .menu__wrapper1 .typography__menu {
     margin-top: 10vw;
-    width: 100%;
+    width: 90%;
     line-height: 8vw;
   }
 
   .menu__wrapper2 .typography__menu {
     margin-top: 10vw;
-    width: 100%;
+    width: 90%;
     line-height: 8vw;
   }
 
   .menu__wrapper3 .typography__menu {
     margin-top: 10vw;
-    width: 100%;
+    width: 90%;
     line-height: 8vw;
     margin-left: 1vw;
   }
 
   .img__menu__wrapper1 .img__menu {
-    width: 30vw;
+    width: 27vw;
     height: 50vw;
   }
 
   .img__menu__wrapper2 .img__menu {
-    width: 40vw;
+    width: 37vw;
     height: 55vw;
     margin-left: -10vw;
   }
 
   .img__menu__wrapper3 .img__menu {
     margin-top: -10vw;
-    width: 50vw;
+    width: 47vw;
     height: 55vw;
     margin-right: -20vw;
   }
