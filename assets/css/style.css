@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ======================= Navbar ======================= */
+
+nav {
+  display: flex;
+  background-color: #fdfdfd;
+  justify-content: space-around;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.17);
+}
+
+nav .logo {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+
+.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fdfdfd;
+  cursor: pointer;
+}
+
+.logo a img {
+  width: 3.8vw;
+  margin-right: 1vw;
+}
+
+.logo a h4 {
+  color: #27251f;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 30%;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color: #27251f;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #00704a;
+  transition: 0.3s;
+}
+
+.nav-btn a {
+  text-decoration: none;
+  color: #fdfdfd;
+  background-color: #00704a;
+  padding: 0.7vw 2.5vw;
+  border-radius: 5vw;
+  font-weight: 600;
+  border: 1px solid #00704a;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-btn a:hover {
+  background-color: #fdfdfd;
+  color: #00704a;
+  border: 1px solid #00704a;
+  transition: all 0.4s ease-in-out;
+}
+
+nav ul li .btn-nav {
+  display: none;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  /* position: relative; */
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 55px;
+  height: 30px;
+  left: -6px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  /* z-index: 2; */
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #27251f;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* hamburger Menu animation */
+.menu-toggle span:nth-child(2) {
+  /* background-color: red; */
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  /* background-color: red; */
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(0px, 0px);
+}
+
+/* Ukuran Tablet */
+@media screen and (max-width: 992px) {
+  .menu-toggle {
+    display: flex;
+    margin-left: auto;
+    z-index: 2;
+    position: relative;
+  }
+
+  nav {
+    padding: 2vw 7vw;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  nav ul {
+    position: absolute;
+    width: 80%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    justify-content: center;
+    gap: 5em;
+    align-items: center;
+    flex-direction: column;
+    background-color: #eeeeee;
+    z-index: -1;
+    right: -400px;
+    /* transform: translateX(100%); */
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  nav ul.slide {
+    right: 0;
+    /* transform: translateX(0); */
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .menu-toggle input {
+    left: -11px;
+  }
+
+  nav ul li .btn-nav {
+    display: block;
+    text-decoration: none;
+    color: #fdfdfd;
+    background-color: #00704a;
+    padding: 2vw 10vw;
+    border-radius: 5vw;
+    font-weight: 600;
+    border: 1px solid #00704a;
+  }
+
+  nav ul li .btn-nav:hover {
+    background-color: #fdfdfd;
+    color: #00704a;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #00704a;
+  }
+
+  nav .nav-btn {
+    display: none;
+  }
+
+  .logo a img {
+    width: 7vw;
+    margin-right: 2vw;
+  }
+}
+
+/* ukuran Mobile */
+@media screen and (max-width: 576px) {
+  nav {
+    padding: 3vw 7vw;
+  }
+
+  .logo a img {
+    width: 9vw;
+  }
+
+  .logo a h4 {
+    display: none;
+  }
+
+  .menu-toggle input {
+    left: -3vw;
+    top: -1vw;
+  }
+
+  nav ul li a {
+    font-size: 4vw;
+  }
+
+  nav ul {
+    width: 80%;
+    gap: 8vw;
+  }
+}
