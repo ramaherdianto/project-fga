@@ -148,6 +148,7 @@ nav ul li .btn-nav {
 /* ======= Section Hero ======= */
 #hero {
   padding-top: 12vw;
+  height: 97vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -209,6 +210,48 @@ nav ul li .btn-nav {
   100% {
     top: -15px;
   }
+}
+
+/* ======= Section About ======== */
+#about {
+  margin-top: 5vw;
+  padding: 8vw 10vw 0 10vw;
+}
+
+.heading-section {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 600;
+}
+
+.heading-section::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #00704a;
+  position: absolute;
+}
+
+.flex-about {
+  margin-top: 7vw;
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  gap: 11rem;
+}
+
+.flex-about img {
+  width: 35%;
+}
+
+.flex-about p {
+  font-size: 1.2vw;
+  line-height: 1.5;
+  text-align: justify;
+  color: #27251f;
+  font-weight: 500;
 }
 
 /* ======== Ukuran Tablet ========= */
@@ -302,7 +345,7 @@ nav ul li .btn-nav {
     margin-bottom: 6vw;
   }
 
-  #heri .typography__hero {
+  #hero .typography__hero {
     margin-top: 5vw;
   }
 
@@ -314,6 +357,33 @@ nav ul li .btn-nav {
   .typography__hero .btn-hero {
     padding: 2vw 5vw;
     font-size: 2.5vw;
+  }
+
+  /* ======= Section About ======= */
+  #about {
+    margin-top: 10vw;
+  }
+
+  .heading-section {
+    font-size: 2.5rem;
+  }
+
+  .heading-section::after {
+    width: 15px;
+    height: 15px;
+  }
+
+  .flex-about {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .flex-about img {
+    width: 70%;
+  }
+
+  .flex-about p {
+    font-size: 1.3rem;
   }
 }
 
@@ -364,5 +434,24 @@ nav ul li .btn-nav {
   #hero .btn-hero {
     font-size: 3.2vw;
     padding: 2.5vw 5vw;
+  }
+
+  /* ========= Section About ========= */
+  .heading-section {
+    font-size: 8vw;
+  }
+
+  .heading-section::after {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .flex-about {
+    margin-top: 15vw;
+    gap: 18vw;
+  }
+
+  .flex-about p {
+    font-size: 4vw;
   }
 }
