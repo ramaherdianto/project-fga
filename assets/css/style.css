@@ -52,6 +52,7 @@ nav .logo {
 
 .logo a h4 {
   color: #27251f;
+  font-size: 1.3vw;
 }
 
 nav ul {
@@ -64,7 +65,7 @@ nav ul {
 nav ul li a {
   color: #27251f;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 1vw;
   font-weight: 600;
   transition: 0.4s ease-in-out;
 }
@@ -222,7 +223,7 @@ nav ul li .btn-nav {
 .heading-section {
   text-align: center;
   font-size: 52px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .heading-section::after {
@@ -253,6 +254,7 @@ nav ul li .btn-nav {
   text-align: justify;
   color: #27251f;
   font-weight: 500;
+  width: 40%;
 }
 
 /* ======== Section Best Seller ====== */
@@ -395,7 +397,7 @@ nav ul li .btn-nav {
   }
 
   nav ul li a {
-    font-size: 1rem;
+    font-size: 2vw;
   }
 
   nav ul.slide {
@@ -433,6 +435,10 @@ nav ul li .btn-nav {
   .logo a img {
     width: 7vw;
     margin-right: 2vw;
+  }
+
+  .logo a h4 {
+    font-size: 2vw;
   }
 
   /* ====== Section Hero ======= */
@@ -492,6 +498,7 @@ nav ul li .btn-nav {
 
   .flex-about p {
     font-size: 1.3rem;
+    width: 100%;
   }
 
   /* ======= Section Best Seller ====== */
@@ -567,7 +574,6 @@ nav ul li .btn-nav {
 
   /* ========= Section About ========= */
   #about {
-    margin-top: -10vw;
     padding-top: 18vw;
   }
 
@@ -599,7 +605,7 @@ nav ul li .btn-nav {
     justify-content: center;
     text-align: center;
     padding: 10vw 0;
-    height: 60vh;
+    height: 61vh;
   }
 
   .row__wrapper .menu__wrapper2 {
@@ -607,16 +613,18 @@ nav ul li .btn-nav {
     justify-content: center;
     justify-items: center;
     text-align: center;
-    padding: 10vw 0;
-    height: 60vh;
+    padding: 20vw 0;
+    height: 61vh;
   }
 
   .row__wrapper .menu__wrapper3 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 10vw 0;
-    height: 57vh;
+    padding: 0;
+    padding-top: 22vw;
+    padding-bottom: 13vw;
+    height: 60vh;
   }
 
   .menu__wrapper1 .typography__menu {
@@ -650,6 +658,7 @@ nav ul li .btn-nav {
   }
 
   .img__menu__wrapper3 .img__menu {
+    margin-top: -10vw;
     width: 50vw;
     height: 55vw;
     margin-right: -20vw;
