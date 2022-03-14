@@ -12,6 +12,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  color: #27251f;
 }
 
 /* ======================= Navbar ======================= */
@@ -69,7 +70,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #00704a;
+  color: #1f3933;
   transition: 0.3s;
   font-weight: 600;
 }
@@ -77,18 +78,18 @@ nav ul li a:hover {
 .nav-btn a {
   text-decoration: none;
   color: #fdfdfd;
-  background-color: #00704a;
+  background-color: #1f3933;
   padding: 0.7vw 2.5vw;
   border-radius: 5vw;
   font-weight: 600;
-  border: 1px solid #00704a;
+  border: 1px solid #1f3933;
   transition: all 0.4s ease-in-out;
 }
 
 .nav-btn a:hover {
   background-color: #fdfdfd;
-  color: #00704a;
-  border: 1px solid #00704a;
+  color: #1f3933;
+  border: 1px solid #1f3933;
   transition: all 0.4s ease-in-out;
 }
 
@@ -169,24 +170,24 @@ nav ul li .btn-nav {
 
 .typography__hero span {
   font-weight: 800;
-  color: #00704a;
+  color: #1f3933;
 }
 
 .typography__hero .btn-hero {
   text-decoration: none;
   color: #fdfdfd;
-  background-color: #00704a;
+  background-color: #1f3933;
   padding: 0.7vw 2vw;
   border-radius: 5vw;
   font-weight: 600;
-  border: 1px solid #00704a;
+  border: 1px solid #1f3933;
   transition: all 0.4s ease-in-out;
 }
 
 .typography__hero .btn-hero:hover {
   background-color: #fdfdfd;
-  color: #00704a;
-  border: 1px solid #00704a;
+  color: #1f3933;
+  border: 1px solid #1f3933;
   transition: all 0.4s ease-in-out;
 }
 
@@ -229,7 +230,7 @@ nav ul li .btn-nav {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #00704a;
+  background-color: #1f3933;
   position: absolute;
 }
 
@@ -252,6 +253,112 @@ nav ul li .btn-nav {
   text-align: justify;
   color: #27251f;
   font-weight: 500;
+}
+
+/* ======== Section Best Seller ====== */
+#bestseller {
+  padding-top: 8vw;
+  margin-top: 5vw;
+}
+
+#bestseller .row__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.row__wrapper .menu__wrapper1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1f3933;
+  margin-top: 10vw;
+  /* padding: 6vw 5vw; */
+  height: 100vh;
+}
+
+.row__wrapper .menu__wrapper2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f0f0f0;
+  /* padding: 6vw 0; */
+  padding-left: 10vw;
+  padding-right: 9vw;
+  height: 100vh;
+}
+
+.row__wrapper .menu__wrapper3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1f3933;
+  /* padding: 6vw 0; */
+  padding-left: 7vw;
+  height: 95vh;
+}
+
+.menu__wrapper1 .typography__menu {
+  width: 50%;
+}
+
+.menu__wrapper3 .typography__menu {
+  width: 50%;
+  margin-top: 8vw;
+}
+
+.menu__wrapper2 .typography__menu {
+  width: 60%;
+}
+
+.img__menu__wrapper1,
+.img__menu__wrapper2,
+.img__menu__wrapper3 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img__menu__wrapper1 .img__menu {
+  width: 15vw;
+  height: 30vw;
+}
+
+.img__menu__wrapper2 .img__menu {
+  width: 20vw;
+  height: 30vw;
+  margin-right: -10vw;
+}
+.img__menu__wrapper3 .img__menu {
+  width: 25vw;
+  height: 30vw;
+  margin-left: -15vw;
+  margin-top: 5vw;
+}
+
+.menu__wrapper3 .typography__menu {
+  margin-left: -13vw;
+}
+
+.typography__menu h3 {
+  color: #fdfdfd;
+  font-size: 2.5vw;
+}
+
+.menu__wrapper2 .typography__menu h3 {
+  color: #1f3933;
+}
+
+.menu__wrapper2 .typography__menu h4 {
+  color: gray;
+}
+
+.typography__menu h4 {
+  margin-top: 3vw;
+  color: lightgray;
+  font-size: 2vw;
+  font-weight: 600;
 }
 
 /* ======== Ukuran Tablet ========= */
@@ -305,18 +412,18 @@ nav ul li .btn-nav {
     display: block;
     text-decoration: none;
     color: #fdfdfd;
-    background-color: #00704a;
+    background-color: #1f3933;
     padding: 2vw 10vw;
     border-radius: 5vw;
     font-weight: 600;
-    border: 1px solid #00704a;
+    border: 1px solid #1f3933;
   }
 
   nav ul li .btn-nav:hover {
     background-color: #fdfdfd;
-    color: #00704a;
+    color: #1f3933;
     transition: all 0.3s ease-in-out;
-    border: 1px solid #00704a;
+    border: 1px solid #1f3933;
   }
 
   nav .nav-btn {
@@ -362,6 +469,7 @@ nav ul li .btn-nav {
   /* ======= Section About ======= */
   #about {
     margin-top: 10vw;
+    padding-top: 14vw;
   }
 
   .heading-section {
@@ -384,6 +492,21 @@ nav ul li .btn-nav {
 
   .flex-about p {
     font-size: 1.3rem;
+  }
+
+  /* ======= Section Best Seller ====== */
+  #bestseller {
+    padding-top: 14vw;
+    margin-top: 10vw;
+  }
+
+  .row__wrapper .menu__wrapper1,
+  .row__wrapper .menu__wrapper2 {
+    height: 40vh;
+  }
+
+  .row__wrapper .menu__wrapper3 {
+    height: 37vh;
   }
 }
 
@@ -418,11 +541,17 @@ nav ul li .btn-nav {
   /* ====== Section Hero ====== */
   #hero {
     padding-top: 20vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
   }
 
   #hero .img__hero {
     width: 35vw;
-    height: 50vw;
+    height: 55vw;
     margin-bottom: 10vw;
   }
 
@@ -437,6 +566,11 @@ nav ul li .btn-nav {
   }
 
   /* ========= Section About ========= */
+  #about {
+    margin-top: -10vw;
+    padding-top: 18vw;
+  }
+
   .heading-section {
     font-size: 8vw;
   }
@@ -452,6 +586,80 @@ nav ul li .btn-nav {
   }
 
   .flex-about p {
+    font-size: 4vw;
+  }
+
+  /* ======= Section Best Seller ======== */
+  #bestseller {
+    padding-top: 18vw;
+  }
+
+  .row__wrapper .menu__wrapper1 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10vw 0;
+    height: 60vh;
+  }
+
+  .row__wrapper .menu__wrapper2 {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 10vw 0;
+    height: 60vh;
+  }
+
+  .row__wrapper .menu__wrapper3 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10vw 0;
+    height: 57vh;
+  }
+
+  .menu__wrapper1 .typography__menu {
+    margin-top: 10vw;
+    width: 100%;
+    line-height: 8vw;
+  }
+
+  .menu__wrapper2 .typography__menu {
+    margin-top: 10vw;
+    width: 100%;
+    line-height: 8vw;
+  }
+
+  .menu__wrapper3 .typography__menu {
+    margin-top: 10vw;
+    width: 100%;
+    line-height: 8vw;
+    margin-left: 1vw;
+  }
+
+  .img__menu__wrapper1 .img__menu {
+    width: 30vw;
+    height: 50vw;
+  }
+
+  .img__menu__wrapper2 .img__menu {
+    width: 40vw;
+    height: 55vw;
+    margin-left: -10vw;
+  }
+
+  .img__menu__wrapper3 .img__menu {
+    width: 50vw;
+    height: 55vw;
+    margin-right: -20vw;
+  }
+
+  .typography__menu h3 {
+    font-size: 5vw;
+  }
+
+  .typography__menu h4 {
     font-size: 4vw;
   }
 }
