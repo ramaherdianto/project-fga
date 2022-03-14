@@ -27,7 +27,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 99;
-  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
 }
 
 nav .logo {
@@ -71,6 +71,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #00704a;
   transition: 0.3s;
+  font-weight: 600;
 }
 
 .nav-btn a {
@@ -95,13 +96,12 @@ nav ul li .btn-nav {
   display: none;
 }
 
-/* Hamburger Menu */
+/* ========= Hamburger Menu ====== */
 .menu-toggle {
   display: none;
   flex-direction: column;
   height: 20px;
   justify-content: space-between;
-  /* position: relative; */
 }
 
 .menu-toggle input {
@@ -112,7 +112,6 @@ nav ul li .btn-nav {
   top: -3px;
   opacity: 0;
   cursor: pointer;
-  /* z-index: 2; */
 }
 
 .menu-toggle span {
@@ -124,14 +123,12 @@ nav ul li .btn-nav {
   transition: all 0.5s;
 }
 
-/* hamburger Menu animation */
+/* ====== hamburger Menu animation ======== */
 .menu-toggle span:nth-child(2) {
-  /* background-color: red; */
   transform-origin: 0 0;
 }
 
 .menu-toggle span:nth-child(4) {
-  /* background-color: red; */
   transform-origin: 0 100%;
 }
 
@@ -148,7 +145,73 @@ nav ul li .btn-nav {
   transform: rotate(-45deg) translate(0px, 0px);
 }
 
-/* Ukuran Tablet */
+/* ======= Section Hero ======= */
+#hero {
+  padding-top: 12vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.typography__hero,
+.img__hero {
+  margin-top: 2vw;
+  margin-bottom: 0;
+}
+
+.typography__hero h2 {
+  font-size: 5vw;
+  font-weight: 500;
+  margin-bottom: 5vw;
+  color: #27251f;
+}
+
+.typography__hero span {
+  font-weight: 800;
+  color: #00704a;
+}
+
+.typography__hero .btn-hero {
+  text-decoration: none;
+  color: #fdfdfd;
+  background-color: #00704a;
+  padding: 0.7vw 2vw;
+  border-radius: 5vw;
+  font-weight: 600;
+  border: 1px solid #00704a;
+  transition: all 0.4s ease-in-out;
+}
+
+.typography__hero .btn-hero:hover {
+  background-color: #fdfdfd;
+  color: #00704a;
+  border: 1px solid #00704a;
+  transition: all 0.4s ease-in-out;
+}
+
+#hero .img__hero {
+  width: 20vw;
+  height: 30vw;
+  margin-bottom: 0;
+  position: relative;
+  animation: updown 3s infinite;
+}
+
+@keyframes updown {
+  0% {
+    top: -15px;
+  }
+
+  50% {
+    top: 15px;
+  }
+
+  100% {
+    top: -15px;
+  }
+}
+
+/* ======== Ukuran Tablet ========= */
 @media screen and (max-width: 992px) {
   .menu-toggle {
     display: flex;
@@ -177,7 +240,6 @@ nav ul li .btn-nav {
     background-color: #eeeeee;
     z-index: -1;
     right: -400px;
-    /* transform: translateX(100%); */
     transition: all 1s;
     opacity: 0;
   }
@@ -188,7 +250,6 @@ nav ul li .btn-nav {
 
   nav ul.slide {
     right: 0;
-    /* transform: translateX(0); */
     opacity: 1;
     z-index: 2;
   }
@@ -223,9 +284,40 @@ nav ul li .btn-nav {
     width: 7vw;
     margin-right: 2vw;
   }
+
+  /* ====== Section Hero ======= */
+  #hero {
+    padding-top: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #hero .img__hero {
+    margin-top: 20vw;
+    width: 30vw;
+    height: 45vw;
+    margin-bottom: 6vw;
+  }
+
+  #heri .typography__hero {
+    margin-top: 5vw;
+  }
+
+  .typography__hero h2 {
+    font-size: 7vw;
+    margin-bottom: 8vw;
+  }
+
+  .typography__hero .btn-hero {
+    padding: 2vw 5vw;
+    font-size: 2.5vw;
+  }
 }
 
-/* ukuran Mobile */
+/* ======= ukuran Mobile ====== */
 @media screen and (max-width: 576px) {
   nav {
     padding: 3vw 7vw;
@@ -251,5 +343,26 @@ nav ul li .btn-nav {
   nav ul {
     width: 80%;
     gap: 8vw;
+  }
+
+  /* ====== Section Hero ====== */
+  #hero {
+    padding-top: 20vw;
+  }
+
+  #hero .img__hero {
+    width: 35vw;
+    height: 50vw;
+    margin-bottom: 10vw;
+  }
+
+  .typography__hero h2 {
+    font-size: 8vw;
+    margin-bottom: 10vw;
+  }
+
+  #hero .btn-hero {
+    font-size: 3.2vw;
+    padding: 2.5vw 5vw;
   }
 }
