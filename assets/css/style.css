@@ -336,7 +336,7 @@ nav ul li .btn-nav {
   width: 25vw;
   height: 30vw;
   margin-left: -15vw;
-  margin-top: 5vw;
+  /* margin-top: 5vw; */
 }
 
 .menu__wrapper3 .typography__menu {
@@ -564,7 +564,7 @@ nav ul li .btn-nav {
   }
 
   .row__wrapper .menu__wrapper3 {
-    height: 37vh;
+    height: 40vh;
     padding-top: 5vw;
     padding-bottom: 5vw;
   }
@@ -574,7 +574,7 @@ nav ul li .btn-nav {
   }
 
   .menu__wrapper3 .img__menu__wrapper3 {
-    margin-top: -8vw;
+    margin-top: -2vw;
   }
 
   /* ======= Section Contact ========= */
@@ -708,9 +708,9 @@ nav ul li .btn-nav {
     justify-content: center;
     text-align: center;
     padding: 0;
-    padding-top: 22vw;
+    padding-top: 27vw;
     padding-bottom: 13vw;
-    height: 60vh;
+    height: 63vh;
   }
 
   .menu__wrapper1 .typography__menu {
